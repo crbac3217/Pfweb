@@ -1,0 +1,290 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout>
+	<div class="menu-wrapper">
+		<header class="page-header">
+			<h1 class="neon-title">THE MENU</h1>
+			<p class="short-intro">Premium Cuts & Combos</p>
+		</header>
+
+		<div class="menu-grid">
+			<section class="menu-category">
+				<div class="category-header">
+					<h2 class="category-title">ALL YOU CAN EAT (AYCE)</h2>
+					<p class="category-note">
+						* All choices come with tteokbokki, mashed potato, corn cheese, rice, kimchi chigae OR denjang chigae, and side dishes.
+					</p>
+				</div>
+				
+				<ul class="item-list">
+					<li class="menu-item">
+						<div class="item-header">
+							<h3>Choice A</h3>
+							<span class="price">Lunch $26.99 | Dinner $33.99</span>
+						</div>
+						<p class="item-desc">Pork Belly</p>
+					</li>
+					<li class="menu-item">
+						<div class="item-header">
+							<h3>Choice B</h3>
+							<span class="price">Lunch $29.99 | Dinner $36.99</span>
+						</div>
+						<p class="item-desc">Pork Belly + Daeji Galbi</p>
+					</li>
+					<li class="menu-item">
+						<div class="item-header">
+							<h3>Choice C</h3>
+							<span class="price">Lunch $32.99 | Dinner $39.99</span>
+						</div>
+						<p class="item-desc">Pork Belly + Daeji Galbi + Beef Belly + Pork Jowl</p>
+					</li>
+				</ul>
+			</section>
+
+			<section class="menu-category">
+				<div class="category-header">
+					<h2 class="category-title">HOUSE SPECIALS</h2>
+				</div>
+				
+				<ul class="item-list">
+					<li class="menu-item">
+						<div class="item-header">
+							<h3>Belly Lover</h3>
+							<span class="price">Lunch $19.99 | Dinner $24.99</span>
+						</div>
+						<p class="item-desc">Pork Belly (250g) + Beef Belly (150g). Includes Denjang Chigae OR Kimchi Chigae, rice, and side dishes.</p>
+					</li>
+					<li class="menu-item">
+						<div class="item-header">
+							<h3>Soy Sauce Marinated <br> Full Pork Back Ribs</h3>
+							<span class="price">$32.99</span>
+						</div>
+						<p class="item-desc">Includes 2 rice and side dishes.</p>
+					</li>
+				</ul>
+			</section>
+
+			<section class="menu-category">
+				<div class="category-header">
+					<h2 class="category-title">BBQ COMBO</h2>
+				</div>
+				
+				<ul class="item-list">
+					<li class="menu-item">
+						<div class="item-header">
+							<h3>For 2</h3>
+							<span class="price">$70.00</span>
+						</div>
+						<p class="item-desc">Pork Belly, Daeji Galbi, Beef Belly, Kimchi Cheese Pancake (Small), Mashed Potato, Tteokbokki, Denjang Chigae, Steamed Egg, Side Dishes, Rice</p>
+					</li>
+					<li class="menu-item">
+						<div class="item-header">
+							<h3>For 4</h3>
+							<span class="price">$120.00</span>
+						</div>
+						<p class="item-desc">Pork Belly, Daeji Galbi, Beef Belly, Pork Jowl, Kimchi Cheese Pancake (Large), Mashed Potato, Tteokbokki, Denjang Chigae, Kimchi Chigae, Steamed Egg, Side Dishes, Rice</p>
+					</li>
+				</ul>
+			</section>
+
+			<section class="menu-category">
+				<div class="category-header">
+					<h2 class="category-title">SINGLE BBQ</h2>
+					<p class="category-note">* Comes with side dishes and rice.</p>
+				</div>
+				
+				<ul class="item-list">
+					<li class="menu-item">
+						<div class="item-header">
+							<h3>Samgyeopsal</h3>
+							<span class="price">$17.99</span>
+						</div>
+						<p class="item-desc">Pork Belly (200g)</p>
+					</li>
+					<li class="menu-item">
+						<div class="item-header">
+							<h3>Daeji Galbi</h3>
+							<span class="price">$17.99</span>
+						</div>
+						<p class="item-desc">Soy Sauce Marinated Pork (200g)</p>
+					</li>
+					<li class="menu-item">
+						<div class="item-header">
+							<h3>Hangjeongsal</h3>
+							<span class="price">$19.99</span>
+						</div>
+						<p class="item-desc">Pork Jowl (200g)</p>
+					</li>
+					<li class="menu-item">
+						<div class="item-header">
+							<h3>Beef Belly</h3>
+							<span class="price">$19.99</span>
+						</div>
+						<p class="item-desc">(200g)</p>
+					</li>
+				</ul>
+			</section>
+		</div>
+
+		<div class="footer-action">
+			<a href="/" class="neon-button">BACK TO HOME</a>
+		</div>
+	</div>
+</Layout>
+
+<style>
+	.menu-wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+		min-height: 100vh;
+		padding: 60px 24px;
+		box-sizing: border-box;
+		background-color: transparent;
+	}
+
+	.page-header {
+		text-align: center;
+		margin-bottom: 3rem;
+	}
+
+	.neon-title {
+		font-size: 3rem;
+		margin: 0 0 0.5rem 0;
+		color: #ffffff;
+		text-shadow: 0 0 5px #fc35d1, 0 0 15px #fc35d1, 0 0 30px #fc35d1;
+		letter-spacing: 4px;
+	}
+
+	.short-intro {
+		color: #e0e0e0;
+		font-size: 1.1rem;
+		margin: 0;
+		letter-spacing: 1px;
+	}
+
+	.menu-grid {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 40px;
+		max-width: 1100px;
+		width: 100%;
+		margin-bottom: 4rem;
+	}
+
+	@media (min-width: 768px) {
+		.menu-grid {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+
+	.menu-category {
+		background: rgba(252, 53, 209, 0.03);
+		border: 1px solid rgba(252, 53, 209, 0.2);
+		border-radius: 12px;
+		padding: 2rem;
+		box-shadow: 0 0 15px rgba(252, 53, 209, 0.05);
+	}
+
+	.category-header {
+		margin-bottom: 1.5rem;
+		border-bottom: 2px solid rgba(252, 53, 209, 0.3);
+		padding-bottom: 1rem;
+	}
+
+	.category-title {
+		color: #fc35d1;
+		font-size: 1.5rem;
+		margin: 0 0 0.5rem 0;
+		letter-spacing: 2px;
+	}
+
+	.category-note {
+		color: #aaaaaa;
+		font-size: 0.9rem;
+		line-height: 1.4;
+		margin: 0;
+	}
+
+	.item-list {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	.menu-item {
+		margin-bottom: 1.5rem;
+		border-bottom: 1px dashed rgba(255, 255, 255, 0.1);
+		padding-bottom: 1rem;
+	}
+
+	.menu-item:last-child {
+		margin-bottom: 0;
+		border-bottom: none;
+		padding-bottom: 0;
+	}
+
+	.item-header {
+		display: flex;
+		justify-content: space-between;
+		align-items: baseline;
+		margin-bottom: 0.4rem;
+		flex-wrap: wrap;
+		gap: 10px;
+	}
+
+	.item-header h3 {
+		color: #ffffff;
+		font-size: 1.2rem;
+		margin: 0;
+		text-shadow: 0 0 5px rgba(252, 53, 209, 0.5);
+	}
+
+	.price {
+		color: #fc35d1;
+		font-weight: bold;
+		font-size: 1rem;
+	}
+
+	.item-desc {
+		color: #cccccc;
+		font-size: 0.95rem;
+		margin: 0;
+		line-height: 1.4;
+	}
+
+	.footer-action {
+		text-align: center;
+		margin-bottom: 2rem;
+	}
+
+	.neon-button {
+		padding: 12px 32px;
+		color: #ffffff;
+		text-decoration: none;
+		font-weight: bold;
+		font-size: 1rem;
+		letter-spacing: 2px;
+		border: 1px solid #fc35d1;
+		background: transparent;
+		transition: all 0.3s ease;
+		box-shadow: 0 0 10px rgba(252, 53, 209, 0.3), inset 0 0 10px rgba(252, 53, 209, 0.2);
+		text-shadow: 0 0 5px #fc35d1;
+	}
+
+	.neon-button:hover {
+		background-color: #fc35d1;
+		color: #000000;
+		box-shadow: 0 0 20px #fc35d1, inset 0 0 10px #fc35d1;
+		text-shadow: none;
+	}
+
+	@media (max-width: 768px) {
+		.neon-title { font-size: 2.2rem; }
+		.menu-category { padding: 1.5rem; }
+		.item-header { flex-direction: column; align-items: flex-start; }
+	}
+</style>

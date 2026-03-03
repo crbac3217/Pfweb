@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" href="/porker_icon.ico" />
+		<meta name="generator" content={Astro.generator} />
+		<title>PORKER F♠CE</title>
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>
+
+<style is:global>
+	html,
+	body {
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		min-height: 100vh; /* height: 100% 대신 min-height 사용 */
+		color: #ffffff;
+		font-family: sans-serif;
+		
+		/* 그라데이션 설정 */
+		background: linear-gradient(0deg, #000000, #1a1818, #000000);
+		background-size: 200% 200%; /* 상하좌우 충분한 여백 확보 */
+		background-attachment: fixed; /* 스크롤할 때도 배경이 깨지지 않게 고정 */
+		
+		/* 애니메이션 실행 */
+		animation: bg-pan 10s ease-in-out infinite;
+	}
+
+	@keyframes bg-pan {
+		0% { background-position: 0% 0%; }
+		100% { background-position: 0% 200%; } 
+	}
+</style>
